@@ -10,6 +10,7 @@ int main(void)
   while(1){
     a += src1_funcPrototype() + src2_funcPrototype();
     b++;
+    b += src22_func();
   }
   return 0;
 }
