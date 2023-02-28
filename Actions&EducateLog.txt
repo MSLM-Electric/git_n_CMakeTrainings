@@ -1,0 +1,25 @@
+Since you're neither able to push nor pull-and-push nor merge-pull-and-push:
+
+You can create a new branch on the GitHub repository.
+And then:
+git add .
+git commit -m 'commitName'
+And reference that branch in your current directory in Terminal.
+git branch -m master branchName
+git push -f origin branchName
+Your code will be pushed to a new branch.
+And then you can merge these two branches.
+(https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase?page=2&tab=scoredesc#tab-top)
+
+I did: (to pull the 'master's progresses to the 'main', but i've lost two commits before/two files 'CMakeLists and ActionsLog')
+
+git add .
+git commit -m "3ym commit bala. O4atona ov bara amrikoiyo"
+git branch -M master
+git push -f origin master
+git merge origin/master (az aftush in bufer. Dar ija jam mesha, ba'd merj mekni bo diga shox4ayak)
+
+git co main
+git merge origin/main
+git merge origin/master
+git push origin main -> (tamom shox4a nav shud)
