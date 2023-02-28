@@ -23,3 +23,11 @@ git co main
 git merge origin/main
 git merge origin/master
 git push origin main -> (tamom shox4a nav shud)
+
+==========================================================================================
+$ I've Created a new branch
+
+git branch -M shoxaki_sieh
+(git co shoxaki_sieh)
+git push origin shoxaki_sieh
+==========================================================================================
