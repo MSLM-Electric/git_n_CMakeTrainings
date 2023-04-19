@@ -37,7 +37,7 @@ $ new subbranch/hokistar created from shoxaki_sieh
 ==========================================================================================
 
 to cancel the changes on specified file do:
-These to files was changed (src/ .. src1.c and src2.c). To cancel only src/src1.c we do:
+These two files was changed (src/ .. src1.c and src2.c). To cancel only src/src1.c we do:
 git co hokistar src/src1.c   (i was on hokistar branch)
 or 
 |git co yourbranchname yourfile.c| 
