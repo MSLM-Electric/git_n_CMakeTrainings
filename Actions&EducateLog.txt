@@ -49,3 +49,7 @@ Also to config your git go to the folder .git on your project and reuptade the p
 	url = https://MSLM-Electric:ghp_XxXxXXXxXxXnxxXnxXXXxxXXxxnxnxnxxXxX@github.com/MSLM-Electric/git_n_CMakeTrainings.git
 	fetch = +refs/heads/*:refs/remotes/origin/* 
 ghp_XxXxXXXxXxXnxxXnxXXXxxXXxxnxnxnxxXxX - is your password where you've got from github
+
+How to cancel the changes on specified folder? Just do it:
+|git co yourbranchname YourProjectFolder/YourSources/YourAndSoOnFolder/exampleFolder/|
+									or ...Folder | (withoit slash)
