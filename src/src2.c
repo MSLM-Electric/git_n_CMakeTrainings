@@ -9,3 +9,5 @@ int src22_func(void)
 {
   return src2_funcPrototype();
 }
+
+//marmar
