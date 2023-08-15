@@ -53,3 +53,26 @@ ghp_XxXxXXXxXxXnxxXnxXXXxxXXxxnxnxnxxXxX - is your password where you've got fro
 How to cancel the changes on specified folder? Just do it:
 |git co yourbranchname YourProjectFolder/YourSources/YourAndSoOnFolder/exampleFolder/|
 									or ...Folder | (withoit slash)
+
+To ignoring files on git stages/project go to the file in folder .git/info/exlude and write for example:
+FolderForTestings/v16
+FolderForTestings/.vs
+FolderForTestings/**/*.obj
+FolderForTestings/**/*.log
+FolderForTestings/**/*.pdb
+FolderForTestings/**/*.aps
+FolderForTestings/**/*.
+FolderForTestings/**/*.[slvb]
+FolderForTestings/**/*.sln
+FolderForTestings/**/*.lnk
+FolderForTestings/**/*.vcxproj
+FolderForTestings/**/*.vcxproj.filters
+FolderForTestings/**/*.vcxproj.user
+FolderForTestings/**/*.bat
+#ignore all files on next folder
+FolderForTestings/Debug/
+FolderForTestings/x64/
+#but except of these files on whole project
+!*.c
+!*.h
+!*.txt
