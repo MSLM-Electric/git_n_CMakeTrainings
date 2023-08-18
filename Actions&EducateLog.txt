@@ -76,3 +76,5 @@ FolderForTestings/x64/
 !*.c
 !*.h
 !*.txt
+
+merge it with itself branch/hokistar
