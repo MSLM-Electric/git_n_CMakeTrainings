@@ -41,3 +41,5 @@ These to files was changed (src/ .. src1.c and src2.c). To cancel only src/src1.
 git co hokistar src/src1.c   (i was on hokistar branch)
 or 
 |git co yourbranchname yourfile.c| 
+
+merge it with itself branch/hokistar
