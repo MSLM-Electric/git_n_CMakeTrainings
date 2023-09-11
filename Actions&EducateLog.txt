@@ -76,3 +76,12 @@ FolderForTestings/x64/
 !*.c
 !*.h
 !*.txt
+
+How to switch from current branch to another branch:
+git log:  (for example) (HEAD, origin/MyBranch2)  (or "gitlab/MyBranch2)
+git add xxxxx("do register your changes, save them")
+git commit -m "xxxxxx"
+git push origin MyBranch2  or git push gitlab MyBranch2
+git co .
+git co origin/MyBranch1    or git co gitlab/MyBranch1
+----> you switched your current branch!
