@@ -33,21 +33,21 @@ git push origin shoxaki_sieh
 ==========================================================================================
 
 ==========================================================================================
-$ new subbranch/hokistar created from shoxaki_sieh 
+$ new subbranch/hokistar created from shoxaki_sieh
 ==========================================================================================
 
 to cancel the changes on specified file do:
 These two files was changed (src/ .. src1.c and src2.c). To cancel only src/src1.c we do:
 git co hokistar src/src1.c   (i was on hokistar branch)
-or 
-|git co yourbranchname yourfile.c| 
+or
+|git co yourbranchname yourfile.c|
 
 With Tortoise softw I missed. I've should to switch the main to hokistar on Tortoise board/window.
 
 Also to config your git go to the folder .git on your project and reuptade the password for url/remote controling projects:
 [remote "origin"]
 	url = https://MSLM-Electric:ghp_XxXxXXXxXxXnxxXnxXXXxxXXxxnxnxnxxXxX@github.com/MSLM-Electric/git_n_CMakeTrainings.git
-	fetch = +refs/heads/*:refs/remotes/origin/* 
+	fetch = +refs/heads/*:refs/remotes/origin/*
 ghp_XxXxXXXxXxXnxxXnxXXXxxXXxxnxnxnxxXxX - is your password where you've got from github
 
 How to cancel the changes on specified folder? Just do it:
@@ -85,3 +85,6 @@ git push origin MyBranch2  or git push gitlab MyBranch2
 git co .
 git co origin/MyBranch1    or git co gitlab/MyBranch1
 ----> you switched your current branch!
+
+
+merge it with itself branch/hokistar
