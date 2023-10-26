@@ -1,0 +1,1 @@
+add_library(Srcs src1.c src2.c)
