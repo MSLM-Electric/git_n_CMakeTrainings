@@ -9,25 +9,25 @@ project(prjCmakeTRAIN VERSION 1.0)
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED True)
 
-option(USE_MYSRC_OSM "us my src hihi" ON)
+option(USE_MYSRC_OSM "use my src hihi" ON)
 
 
 configure_file(prjTrainConfigVersion.h.in prjCmakeTRAINConfig.h)
 
-add_subdirectory(src)
+add_subdirectory("${PROJECT_SOURCE_DIR}" Srcs)
 
 file(GLOB THISHEADERS inc/*.h)
 include_directories(inc)
-set(HEADER_FILES THISHEADERS)
+set(HEADER_FILES THISHEADERS)  
 message(55${HEADER_FILES})
 
-list(APPEND SRC_LIBS src)
-list(APPEND SRC_INCLUDES "${PROJECT_SOURCE_DIR}/src")
-message(${SRC_INCLUDES})
+list(APPEND SRC_LIBS Srcs)
+#list(APPEND SRC_INCLUDES "${PROJECT_SOURCE_DIR}/src")
+#message(${SRC_INCLUDES})
 
-add_library(mylib ${THISHEADERS})
-target_include_directories(mylib PUBLIC ${PROJECT_SOURCE_DIR}/inc)
+##add_library(mylib ${THISHEADERS})
+add_library(mylib SRC_LIBS)
 add_executable(prjCmakeTRAIN main.c)
 
 target_link_libraries(prjCmakeTRAIN PUBLIC ${SRC_LIBS})
-
+target_include_directories(prjCmakeTRAIN PUBLIC ${PROJECT_BINARY_DIR}/inc)
