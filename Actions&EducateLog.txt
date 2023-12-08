@@ -1,0 +1,9 @@
+___________________________________________________________________
+gone to the folder  .git/info/exlude  and filled next lines:
+
+.vs
+MyTest2/out
+Test1/out
+
+it has done for ignoring these(above) folders files!
+___________________________________________________________________
