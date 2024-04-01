@@ -1,0 +1,15 @@
+*.[oa]
+*.*
+*.sln
+*.vcxproj
+.vs
+.bat
+!*.c
+!*.h
+!*.json
+!*.gitignore
+!*.txt
+!*.md
+!Debug/*.exe
+!Release/*.exe
+f

@@ -2,5 +2,5 @@
 
 int src1_funcPrototype(void)
 {
-  return 1;
+  return 15;
 }
