@@ -2,7 +2,7 @@
 
 int src2_funcPrototype(void)
 {
-  return 2;
+  return 4;
 }
 
 int src22_func(void)

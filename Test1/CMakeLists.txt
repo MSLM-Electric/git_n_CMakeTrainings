@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0.2)
 if (POLICY CMP0048)
   cmake_policy(SET CMP0048 NEW)
 endif (POLICY CMP0048)
@@ -11,23 +11,21 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 
 option(USE_MYSRC_OSM "use my src hihi" ON)
 
-
 configure_file(prjTrainConfigVersion.h.in prjCmakeTRAINConfig.h)
 
-add_subdirectory("${PROJECT_SOURCE_DIR}" Srcs)
+# Установка пути к исходным файлам
+set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
+set(INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
-file(GLOB THISHEADERS inc/*.h)
-include_directories(inc)
-set(HEADER_FILES THISHEADERS)  
-message(55${HEADER_FILES})
+# Добавление исходных файлов
+set(SOURCES
+    ${SOURCE_DIR}/src1.c
+    ${SOURCE_DIR}/src2.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/main.c
+)
 
-list(APPEND SRC_LIBS Srcs)
-#list(APPEND SRC_INCLUDES "${PROJECT_SOURCE_DIR}/src")
-#message(${SRC_INCLUDES})
+# Создание исполняемого файла
+add_executable(prjCmakeTRAIN ${SOURCES})
 
-##add_library(mylib ${THISHEADERS})
-add_library(mylib SRC_LIBS)
-add_executable(prjCmakeTRAIN main.c)
-
-target_link_libraries(prjCmakeTRAIN PUBLIC ${SRC_LIBS})
-target_include_directories(prjCmakeTRAIN PUBLIC ${PROJECT_BINARY_DIR}/inc)
+# Установка пути к заголовочным файлам
+target_include_directories(prjCmakeTRAIN PUBLIC ${INCLUDE_DIR})

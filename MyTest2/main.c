@@ -1,7 +1,7 @@
 #include "src1.h"
 #include "src2.h"
 
-#include "stdlib.h"
+#include <stdlib.h>
 
 int main(void)
 {
