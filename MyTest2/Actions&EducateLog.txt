@@ -1,3 +1,6 @@
 ______________________________________________________________________________
 The main CMakeLists.txt generates sucessfuly, but the main.c doesn't find the
 header files: inc/src1.h;  src2.h
+
+
+lets merge it with tool
