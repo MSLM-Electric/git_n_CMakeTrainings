@@ -5,3 +5,5 @@ header files: inc/src1.h;  src2.h
 
 lets merge it with tool. Lets merge2.
 Just Do It
+
+for merge3!!
