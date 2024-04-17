@@ -8,6 +8,10 @@ Just Do It
 
 for merge3!!
 
+merg4 star
 merge5 from main
+
+
+newstate 6 in hokistar
 
 newstate 7 in main
