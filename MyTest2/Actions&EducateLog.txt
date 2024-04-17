@@ -4,3 +4,5 @@ header files: inc/src1.h;  src2.h
 
 
 lets merge it with tool
+
+for merge3!!
