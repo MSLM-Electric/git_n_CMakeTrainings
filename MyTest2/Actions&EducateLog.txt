@@ -10,3 +10,6 @@ for merge3!!
 
 merg4 star
 merge5 from main
+
+
+newstate 6
