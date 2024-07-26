@@ -100,3 +100,9 @@ git tag -a v0.0.0.1 -m "my first version"
 Do `git tag` to see how many tags exists.
 Do `git show` or `git show v.0.0.0.1` to the detailed info. about tag.
 Now we tryin `git push origin --tags`
+It pushed only to local repo /PC, no tags, without new generated tag.
+I've tried: git push origin v0.0.0.2
+Nothing happened. Only error occured: "src refspec v0.0.0.2 does not match any. failed to push..."
+I've tried: git push origin hokistar v0.0.0.2
+The result the same as above.
+Now I'm tryin: git tag -a v0.0.0.2 -m "my second version"
