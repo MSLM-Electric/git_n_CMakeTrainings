@@ -88,3 +88,6 @@ git co origin/MyBranch1    or git co gitlab/MyBranch1
 
 
 merge it with itself branch/hokistar
+
+tag test:
+git push origin hokistar --tags
