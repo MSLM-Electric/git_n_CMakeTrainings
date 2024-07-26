@@ -91,3 +91,6 @@ merge it with itself branch/hokistar
 
 tag test:
 git push origin hokistar --tags
+nothing happend!?
+we do again:
+git push origin hokistar --tags
