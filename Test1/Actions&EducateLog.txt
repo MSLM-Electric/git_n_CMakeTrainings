@@ -105,4 +105,10 @@ I've tried: git push origin v0.0.0.2
 Nothing happened. Only error occured: "src refspec v0.0.0.2 does not match any. failed to push..."
 I've tried: git push origin hokistar v0.0.0.2
 The result the same as above.
-Now I'm tryin: git tag -a v0.0.0.2 -m "my second version"
+Now I'm tryin:
+git add .
+git commit -m "tag test5"
+git tag -a v0.0.0.2 -m "my second version"
+The result: this new tag attached to the commit named "tag test5" but not pushed to remote host yet!
+Now I create new commit but without new tag and push it to remote host by doing:
+gut push origin hokistar --tags
