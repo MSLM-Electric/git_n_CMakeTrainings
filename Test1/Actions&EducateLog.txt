@@ -98,14 +98,18 @@ Nothing happened!
 Then I've found and created "Annotated Tags" by doing:
 git tag -a v0.0.0.1 -m "my first version"
 Do `git tag` to see how many tags exists.
-Do `git show` or `git show v.0.0.0.1` to the detailed info. about tag.
-Now we tryin `git push origin --tags`
+Do `git show` or `git show v.0.0.0.1` to see the detailed info. about tag.
+and the do: git push origin hokistar --tags
+Another chapter of work:
+we've done some jobs and commited to the local repo
+Now we tryin `git push origin --tags` to see does it create new commit with generating new tag?
 It pushed only to local repo /PC, no tags, without new generated tag.
 I've tried: git push origin v0.0.0.2
 Nothing happened. Only error occured: "src refspec v0.0.0.2 does not match any. failed to push..."
 I've tried: git push origin hokistar v0.0.0.2
 The result the same as above.
 Now I'm tryin:
+sm worx
 git add .
 git commit -m "tag test5"
 git tag -a v0.0.0.2 -m "my second version"
@@ -114,3 +118,4 @@ Now I create new commit but without new tag and push it to remote host by doing:
 git add .
 git commit -m "tag test6"
 gut push origin hokistar --tags
+And it pushed to the remote repo succesfully. New tag v0.0.0.2 attached only to a "tag test5" commit.
