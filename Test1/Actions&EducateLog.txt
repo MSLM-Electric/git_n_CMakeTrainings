@@ -99,3 +99,4 @@ Then I've found and created "Annotated Tags" by doing:
 git tag -a v0.0.0.1 -m "my first version"
 Do `git tag` to see how many tags exists.
 Do `git show` or `git show v.0.0.0.1` to the detailed info. about tag.
+Now we tryin `git push origin --tags`
