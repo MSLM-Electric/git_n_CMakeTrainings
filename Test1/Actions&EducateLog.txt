@@ -111,4 +111,6 @@ git commit -m "tag test5"
 git tag -a v0.0.0.2 -m "my second version"
 The result: this new tag attached to the commit named "tag test5" but not pushed to remote host yet!
 Now I create new commit but without new tag and push it to remote host by doing:
+git add .
+git commit -m "tag test6"
 gut push origin hokistar --tags
