@@ -119,3 +119,12 @@ git add .
 git commit -m "tag test6"
 gut push origin hokistar --tags
 And it pushed to the remote repo succesfully. New tag v0.0.0.2 attached only to a "tag test5" commit.
+
+Comparing two different branches:
+git diff shoxaki_sieh hokistar
+or
+git diff shoxaki_sieh..hokistar
+
+git diff main..hokistar Test1 #see differences only between Test1 folder on both branches
+git diff main..hokistar MyTest2
+git diff main..hokistar Test1/src/src1.c
