@@ -128,3 +128,8 @@ git diff shoxaki_sieh..hokistar
 git diff main..hokistar Test1 #see differences only between Test1 folder on both branches
 git diff main..hokistar MyTest2
 git diff main..hokistar Test1/src/src1.c
+
+Print only name of files:
+git diff --name-only main..hokistar
+also if you want to see the differences between the tenth latest commit and the fifth latest (or so):
+git diff --name-only HEAD~10 HEAD~5
