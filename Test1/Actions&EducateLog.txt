@@ -133,3 +133,16 @@ Print only name of files:
 git diff --name-only main..hokistar
 also if you want to see the differences between the tenth latest commit and the fifth latest (or so):
 git diff --name-only HEAD~10 HEAD~5
+
+The next line copies the difftexts to the clipboard: 
+git diff --name-only main..hokistar | clip
+
+Copying the all logs history to the clipboard: (it's may be a very bunch of big texts, take carefull)
+git log | clip
+
+Needs testing//!
+git commit -m "test commit for change log" --trailer "Changelog: Change"
+
+//?
+How export the release? With descriptions!? Additionaly to tag.
+It's comfotable to do it by configing through github menus.
