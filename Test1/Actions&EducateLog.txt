@@ -146,3 +146,12 @@ git commit -m "test commit for change log" --trailer "Changelog: Change"
 //?
 How export the release? With descriptions!? Additionaly to tag.
 It's comfotable to do it by configing through github menus.
+
+$ Creating a New Branch from a Remote Branch: (for more clarify: creating a branch that not existed on local repo but exists on remote, and it was updated)
+To create a new branch from a remote branch, first, fetch the remote branches, then create and track a new branch based on the remote one. Replace new-branch-name with your desired branch name and remote-branch-name with the name of the remote branch.:
+git fetch origin
+git checkout -b new-branch-name origin/remote-branch-name
+
+the other example (I wanted update from remote repo the branch named superfeature2 but it not existed on local or was deleted many times ago. So to do it:)
+git fetch origin
+git checkout -b superfeature2 origin/superfeature2 
