@@ -15,7 +15,10 @@ int main(void)
   return 0;
 }
 
+#define UNUSED(x) (void)x
+
 int justForSomeGitProcessChangeImmitate(void* arg)
 {
+    UNUSED(arg);
     return 0;
 }
