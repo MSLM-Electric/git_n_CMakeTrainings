@@ -14,3 +14,8 @@ int main(void)
   }
   return 0;
 }
+
+int justForSomeGitProcessChangeImmitate(void* arg)
+{
+    return 0;
+}
