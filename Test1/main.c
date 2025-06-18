@@ -7,7 +7,7 @@ int main(void)
 {
   int a = 0;
   int b = 0;
-  while(1){
+  while(b < 20){
     a += src1_funcPrototype() + src2_funcPrototype();
     b++;
     b += src22_func();
