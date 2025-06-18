@@ -14,3 +14,8 @@ int main(void)
   }
   return 0;
 }
+
+int NewFeature(void* arg)
+{
+    return 1;
+}
