@@ -10,6 +10,7 @@
 !*.gitignore
 !*.txt
 !*.md
+!*.png
 !Debug/*.exe
 !Release/*.exe
 f
