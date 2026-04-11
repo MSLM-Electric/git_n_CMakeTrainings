@@ -155,3 +155,6 @@ git checkout -b new-branch-name origin/remote-branch-name
 the other example (I wanted update from remote repo the branch named superfeature2 but it not existed on local or was deleted many times ago. So to do it:)
 git fetch origin
 git checkout -b superfeature2 origin/superfeature2 
+
+How update the new tags for repo?
+git fetch --tags
