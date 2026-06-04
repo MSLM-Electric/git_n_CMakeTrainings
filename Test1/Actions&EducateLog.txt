@@ -183,3 +183,5 @@ git push origin hokistar --force-with-lease
 git fetch origin
 #after that it requires to merge it to push. Just do push from another local repo:
 git push origin hokistar
+
+#just for test. Commiting from PC2 local repo 
