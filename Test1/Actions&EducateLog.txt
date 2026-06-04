@@ -185,3 +185,6 @@ git fetch origin
 git push origin hokistar
 
 #just for test. Commiting from PC2 local repo 
+
+#and now commiting from PC1 local repo, but before I recommend not do add cmd and commit. Just initially do 'git pull origin hokistar'
+#and then do commit from PC1 local repo
