@@ -158,3 +158,6 @@ git checkout -b superfeature2 origin/superfeature2
 
 How update the new tags for repo?
 git fetch --tags
+
+Show the description of all tags:
+git tag -n
