@@ -161,3 +161,10 @@ git fetch --tags
 
 Show the description of all tags:
 git tag -n
+
+Rename the Most Recent Commit: (we will check it now)
+If you only need to change the message of the very last commit you made:
+Command: Run 
+	git commit --amend -m "New commit message"     to change it directly from the terminal.
+Using Editor: Alternatively, run 
+	git commit --amend     without the -m flag to open your default text editor and edit the message there.
